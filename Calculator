@@ -1,0 +1,54 @@
+import java.util.*;
+public class Calculator
+{
+	public static void main(String[] args){
+	 Scanner sc = new Scanner(System.in);
+	 
+	 System.out.println("enter math marks out of 100:");
+	 int math=sc.nextInt();
+	 System.out.println("enter phy marks out of 100:");
+	 int phy=sc.nextInt();
+	 System.out.println("enter chem marks out of 100:");
+	 int chem=sc.nextInt();
+	 System.out.println("enter bio marks out of 100:");
+	 int bio=sc.nextInt();
+	 System.out.println("enter java marks out of 100:");
+	 int java=sc.nextInt();
+	 
+	 int total_marks=math+phy+chem+bio+java;
+	System.out.println("total marks:"+total_marks);
+	
+	int ave_per=(total_marks)/5;
+	System.out.println("total percentage:"+ave_per+"%");
+	
+	
+	if(ave_per>=90)
+	{
+	    System.out.println("grade O");
+	}
+	else if(ave_per>=80 && ave_per<90)
+	{
+	    System.out.println("grade A+");
+	}
+	else if(ave_per>=70 && ave_per<80)
+	{
+	    System.out.println("grade A");
+	}
+	else if(ave_per>=60 && ave_per<70)
+	{
+	    System.out.println("grade B");
+	}
+	else if(ave_per>=50 && ave_per<60)
+	{
+	    System.out.println("grade C");
+	}
+	else if(ave_per>=40 && ave_per<50)
+	{
+	    System.out.println("grade C");
+	}
+	else
+	{
+	    System.out.println("F");
+	}
+	}
+}
