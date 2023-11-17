@@ -1,0 +1,67 @@
+import java.util.*;
+public class numgame
+{
+	public static void main(String[] args)
+	{
+	 Scanner sc = new Scanner(System.in);
+	 int number=1+(int)(100*Math.random());
+	 System.out.println("choose number between 1 to 100");
+	 System.out.println("guess number within 5 trials");
+	 int b=5,i;
+	 for(i=1;i<=b;i++)
+	 {
+	     System.out.println("guess number:");
+	     int guess_num=sc.nextInt();
+	     
+	 
+	 if(number==guess_num)
+	 {
+	     System.out.println("the no. you guess is correct");
+	     break;
+	 }
+	 else if(number<guess_num ) 
+	 {
+	     System.out.println("the no. is less than:"+guess_num);
+	 }
+	
+	 else if(number>guess_num)
+	 {
+	      System.out.println("the no. is greater than:"+guess_num);
+	 }
+	 
+	 if(i==b)
+	 {
+	     System.out.println("your trials are finished");
+	     System.out.println("the number is:"+number);
+	     
+	 }
+	
+     }
+	
+	if(i==1)
+	{
+	    System.out.println("SCORE is:5");
+	}
+	else if(i==2)
+	{
+	    System.out.println("SCORE is:4");
+	}
+	else if(i==3)
+	{
+	    System.out.println("SCORE is:3");
+	}
+	else if(i==4)
+	{
+	    System.out.println("SCORE is:2");
+	}
+	else if(i==5)
+	{
+	    System.out.println("SCORE is:1");
+	}
+	else
+	{
+	    System.out.println("SCORE is:0");
+	}
+	
+}
+}
