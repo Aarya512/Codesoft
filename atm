@@ -1,0 +1,61 @@
+import java.util.*;
+public class atm
+{
+    
+    
+	public static void main(String[] args)
+	{
+	 int balance=1000000;
+	 int withdraw,deposit;  
+	 int ch;
+	 Scanner sc = new Scanner(System.in);
+	 while(true)
+	 {
+	     System.out.println("welcome");
+	     System.out.println("please pick up the choice");
+	     System.out.println("1:withdraw,2:deposit,3:check balance,4:exit");
+	     
+	     ch=sc.nextInt();
+	     switch(ch)
+	     {
+	     
+	     case 1:
+	         System.out.println("enter amount to withdraw:");
+	         withdraw=sc.nextInt();
+	         if(balance>=withdraw)
+	         {
+	             balance=balance-withdraw;
+	             System.out.println("please collect your money");
+	            
+	         }
+	         else
+	         {
+	             System.out.println("insufficient balance");
+	             System.out.println("please check balance in your account");
+	         }
+	         break;
+	      case 2:
+	          {
+	             System.out.println("enter amount to deposit:");
+	             deposit=sc.nextInt(); 
+	             balance=balance+deposit;
+	             System.out.println("amount is deposited sucessfully!!");
+	             break;
+	          }
+	          
+	       case 3:
+	           {
+	               
+	             System.out.println("balance in your account is:"+balance);
+	             break;
+	           }
+	       case 4:
+	           {
+	               System.exit(0);
+	           }
+	     }
+	          
+	     
+	 }
+	}
+}
